@@ -1,11 +1,11 @@
-/* Color variables */
+
 :root {
   --white-color: #fff;
   --bg-color: #fff;
   --gray-color: #ccc;
 }
 
-/* Changing background color */
+
 body {
   background: var(--bg-color) !important;
 }
@@ -13,9 +13,9 @@ body {
 
 #hm {
   display: flex;
-  align-items: center;  /* Aligns text and buttons vertically */
-  justify-content: center;  /* Centers content */
-  gap: 15px; /* Space between elements */
+  align-items: center;  
+  justify-content: center;  
+  gap: 15px; 
   padding: 15px;
   background: #785BF8;
   color: white;
@@ -23,7 +23,7 @@ body {
 }
 
 #hm h3 {
-  margin: 0; /* Removes default margin */
+  margin: 0; 
   font-size: 18px;
   font-weight: 600;
 }
@@ -80,12 +80,11 @@ body {
 
 
 
-/* Changing link color */
 .nav-item .nav-link {
   color: var(--white-color);
 }
 
-/* Hero section background image */
+
 .hero {
   height: 100vh;
   background-image: url("h.jpg");
@@ -110,7 +109,7 @@ body {
   position: relative;
 }
 
-/* Timeline background line */
+
 #about .img::before {
   content: "";
   left: 50%;
@@ -143,7 +142,7 @@ footer .social-icons a {
   width: 230px;
 }
 
-/* Contact section background image */
+
 #contact {
   background-size: cover;
   background-attachment: fixed;
