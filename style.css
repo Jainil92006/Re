@@ -10,26 +10,7 @@ body {
   background: var(--bg-color) !important;
 }
 
-#hm {
-  display: flex;
-  flex-wrap: wrap; /* allow wrapping on small screens */
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  padding: 15px;
-  background: #785BF8;
-  color: white;
-  border-radius: 5px;
-  text-align: center; /* center text on mobile */
-}
-
-#hm h3 {
-  flex: 1 1 100%;  /* take full width on mobile */
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
+/* --- Buttons shared styles --- */
 #hm button,
 .resume-btn {
   padding: 10px 20px;
@@ -42,33 +23,26 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Buttons individual colors */
-#hire-btn {
+/* Hire Me + No Button → Same style */
+#hire-btn,
+#no-btn {
   background-color: #ff6600;
   color: white;
 }
-#hire-btn:hover {
+#hire-btn:hover,
+#no-btn:hover {
   background-color: #e65c00;
   transform: scale(1.1);
   box-shadow: 4px 4px 10px rgba(230, 92, 0, 0.5);
 }
 
-#no-btn {
-  background-color: #ccc;
-  color: black;
-}
-#no-btn:hover {
-  background-color: #bbb;
-  transform: scale(1.1);
-  box-shadow: 4px 4px 10px rgba(100, 100, 100, 0.5);
-}
-
+/* Resume button → White & blue */
 .resume-btn {
   background-color: white;
   color: #4A90E2;
   text-decoration: none;
   font-weight: bold;
-  margin-left: 0; /* ❌ remove fixed margin */
+  margin-left: 0; /* remove fixed margin */
 }
 .resume-btn:hover {
   background-color: #ffd700;
@@ -76,22 +50,6 @@ body {
   transform: scale(1.05);
 }
 
-/* --- Mobile Fix --- */
-@media screen and (max-width: 768px) {
-  #hm {
-    flex-direction: column; /* stack items */
-  }
-
-  #hm h3 {
-    font-size: 16px;
-  }
-
-  #hm button,
-  .resume-btn {
-    width: 100%;  /* full width buttons */
-    max-width: 300px; /* prevent being too wide */
-  }
-}
 
 
 
@@ -202,6 +160,7 @@ footer .social-icons a {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
+
 
 
 
