@@ -53,14 +53,6 @@ body {
 #no-btn {
   background-color: #ccc;
   color: black;
-  padding: 10px 10px;  
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #no-btn:hover {
@@ -220,6 +212,7 @@ footer .social-icons a {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
+
 
 
 
