@@ -12,26 +12,25 @@ body {
 
 #hm {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+  align-items: center;  
+  justify-content: center;  
+  gap: 15px; 
   padding: 15px;
   background: #785BF8;
   color: white;
   border-radius: 5px;
-  flex-wrap: wrap;   /* ✅ allows items to wrap on small screens */
-  text-align: center;
+  flex-wrap: wrap; /* Allow wrapping for small screens */
+  text-align: center; /* Center text in small view */
 }
 
 #hm h3 {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
-  flex: 1 1 100%;  /* ✅ ensures heading takes full width */
 }
 
-#hm button,
-.resume-btn {
+/* Buttons */
+#hm button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -42,7 +41,6 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Hire Me button */
 #hire-btn {
   background-color: #ff6600;
   color: white;
@@ -54,30 +52,27 @@ body {
   box-shadow: 4px 4px 10px rgba(230, 92, 0, 0.5);
 }
 
-/* No button → styled like Hire but white */
 #no-btn {
-  background-color: white;
+  background-color: #ccc;
   color: black;
-  border: 2px solid #ff6600;
 }
 
 #no-btn:hover {
-  background-color: #ff6600;
-  color: white;
+  background-color: #bbb;
   transform: scale(1.1);
-  box-shadow: 4px 4px 10px rgba(230, 92, 0, 0.5);
+  box-shadow: 4px 4px 10px rgba(100, 100, 100, 0.5);
 }
 
 /* Resume button */
 .resume-btn {
   background-color: white;
+  margin-left: 100px;
   color: #4A90E2;
   padding: 10px 15px;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
-  border: 2px solid #4A90E2;
   transition: all 0.3s ease;
 }
 
@@ -90,20 +85,21 @@ body {
 /* 📱 Mobile responsiveness */
 @media (max-width: 600px) {
   #hm {
-    flex-direction: column;   /* stack elements */
+    flex-direction: column; /* Stack items vertically */
     gap: 10px;
   }
 
-  #hm h3 {
-    font-size: 16px;
+  .resume-btn {
+    margin-left: 0; /* Remove extra spacing */
+    width: 100%;    /* Full width on small screens */
+    text-align: center;
   }
 
-  #hm button,
-  .resume-btn {
-    width: 100%;   /* full width buttons */
-    max-width: 280px;
+  #hm button {
+    width: 100%; /* Make buttons full width on small screens */
   }
 }
+
 
 
 .nav-item .nav-link {
@@ -212,6 +208,7 @@ footer .social-icons a {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
+
 
 
 
