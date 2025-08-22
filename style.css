@@ -80,6 +80,15 @@ body {
 
 
 
+/* Make navbar fit properly on mobile */
+.navbar-nav {
+  text-align: center; /* Center items */
+}
+
+.navbar-nav .nav-item {
+  margin: 10px 0; /* Add space between items */
+}
+
 /* Changing link color */
 .nav-item .nav-link {
   color: var(--white-color);
@@ -187,4 +196,5 @@ footer .social-icons a {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
+
 
