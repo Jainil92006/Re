@@ -10,7 +10,6 @@ body {
   background: var(--bg-color) !important;
 }
 
-/* --- Buttons shared styles --- */
 #hm button,
 .resume-btn {
   padding: 10px 20px;
@@ -49,9 +48,6 @@ body {
   color: #333;
   transform: scale(1.05);
 }
-
-
-
 
 
 .nav-item .nav-link {
@@ -160,6 +156,7 @@ footer .social-icons a {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
+
 
 
 
