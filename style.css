@@ -10,6 +10,26 @@ body {
   background: var(--bg-color) !important;
 }
 
+#hm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background: #785BF8;
+  color: white;
+  border-radius: 5px;
+  flex-wrap: wrap;   /* ✅ allows items to wrap on small screens */
+  text-align: center;
+}
+
+#hm h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  flex: 1 1 100%;  /* ✅ ensures heading takes full width */
+}
+
 #hm button,
 .resume-btn {
   padding: 10px 20px;
@@ -22,31 +42,67 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Hire Me + No Button → Same style */
-#hire-btn,
-#no-btn {
+/* Hire Me button */
+#hire-btn {
   background-color: #ff6600;
   color: white;
 }
-#hire-btn:hover,
-#no-btn:hover {
+
+#hire-btn:hover {
   background-color: #e65c00;
   transform: scale(1.1);
   box-shadow: 4px 4px 10px rgba(230, 92, 0, 0.5);
 }
 
-/* Resume button → White & blue */
+/* No button → styled like Hire but white */
+#no-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff6600;
+}
+
+#no-btn:hover {
+  background-color: #ff6600;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px rgba(230, 92, 0, 0.5);
+}
+
+/* Resume button */
 .resume-btn {
   background-color: white;
   color: #4A90E2;
+  padding: 10px 15px;
   text-decoration: none;
+  font-size: 16px;
   font-weight: bold;
-  margin-left: 0; /* remove fixed margin */
+  border-radius: 5px;
+  border: 2px solid #4A90E2;
+  transition: all 0.3s ease;
 }
+
 .resume-btn:hover {
   background-color: #ffd700;
   color: #333;
   transform: scale(1.05);
+}
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 600px) {
+  #hm {
+    flex-direction: column;   /* stack elements */
+    gap: 10px;
+  }
+
+  #hm h3 {
+    font-size: 16px;
+  }
+
+  #hm button,
+  .resume-btn {
+    width: 100%;   /* full width buttons */
+    max-width: 280px;
+  }
 }
 
 
@@ -156,6 +212,7 @@ footer .social-icons a {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
+
 
 
 
