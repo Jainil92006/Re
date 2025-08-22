@@ -102,8 +102,12 @@ body {
   background-image: url("h.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-position: center;   /* keeps image centered */
+  background-attachment: scroll; /* so it moves with mobile */
+  min-height: 100vh;             /* full screen height */
+  width: 100%;
 }
+
 
 #skills i {
   height: 100px;
@@ -198,6 +202,7 @@ footer .social-icons a {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
+
 
 
 
